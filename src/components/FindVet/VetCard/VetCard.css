@@ -80,3 +80,9 @@
 .clinic-social a > .fab:hover {
     transform: scale(1.25);
 }
+
+@media (max-width: 1024px) {
+    .vet-card-wrapper {
+        width: 400px;
+    }
+}
