@@ -1,0 +1,185 @@
+/* COMMON*/
+
+.medical-record-wrapper {
+    display: flex;
+    padding: 100px 0px;
+    justify-content: center;
+}
+
+.medical-record {
+    width: 650px;
+}
+
+.pet-info-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+}
+
+.pet-info-section {
+    display: flex;
+    flex-flow: column;
+}
+
+.pet-info-header, .health-concerns-header, .medical-record-btns {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background: #234465;
+    border-bottom: 10px solid darkgoldenrod;
+    font-size: 20px;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.medical-record-btns {
+    position: relative;
+}
+
+#header-logo {
+    position: absolute;
+    right: 25px;
+}
+
+/* PICTURE WRAPPER */
+
+.pet-picture-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.pet-picture {
+    margin-bottom: 10px;
+}
+
+#pet-profile-pic {
+    height: 400px;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.attach-image {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    cursor: pointer;
+    display: none;
+}
+
+/* PET INFO */
+
+.pet-info-container {
+    margin-left: 20px;
+}
+
+.info-container, .health-concerns-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+    width: 100%;
+}
+
+.pet-info p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.pet-info p span {
+    margin-left: 10px;
+}
+
+/* HEALTH CONCERNS */
+
+.health-concerns {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.health-concerns-container p {
+    margin: 0;
+}
+
+.health-concerns-container p span {
+    margin-left: 10px;
+}
+
+.health-concerns-wrapper > .edit-wrapper {
+    margin-top: -30px;
+}
+
+/* EDIT BUTTONS WRAPPER */
+
+.edit-btn {
+    height: 25px;
+    width: 70px;
+    justify-content: center;
+    background: linear-gradient(-5deg, darkgoldenrod, #eeaf14);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.edit-wrapper {
+    display: none;
+}
+
+.edit-wrapper input {
+    width: 100px;
+    border: 2px solid black;
+    border-right: none;
+}
+
+.edit-wrapper input:focus-visible {
+    border: none;
+    padding: 0px;
+}
+
+.edit-wrapper button {
+    border: 2px solid black;
+    border-left: 1px solid black;
+}
+
+/* DELETE/CREATE BUTTONS SECTION */
+
+.medical-record-btns {
+    display: flex;
+    justify-content: center;
+    background: #234465;
+    margin-bottom: 20px;
+}
+
+.medical-record-btns > .section-btn {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+.create-record-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.create-record-btn a {
+    padding: 10px;
+}
+
+#delete-btn {
+    background: darkgoldenrod;
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    .medical-record {
+        width: 100%;
+    }
+}

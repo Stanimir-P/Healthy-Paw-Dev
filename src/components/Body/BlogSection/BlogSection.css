@@ -1,0 +1,122 @@
+/* BLOG COMMON */
+
+.blog-section {
+    margin-top: 320px;
+}
+
+.blog-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ARTICLE */
+
+.blog-section-article {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background: #234465;
+    width: 33%;
+    margin: 0px 10px;
+}
+
+.blog-section-article img {
+    height: 300px;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-section-article-title {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    min-height: 80px;
+    margin: 0px 20px;
+}
+
+.blog-section-article-title h1 {
+    margin: 20px 0px 10px 0px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid darkgoldenrod;
+}
+
+.blog-section-article-text {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: 0px 20px;
+}
+
+/* READ MORE BUTTON */
+
+.read-more-btn-wrapper {
+    display: flex;
+    background: white;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    height: 50px;
+    margin: 10px 0px;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.read-more-btn-wrapper:focus {
+    box-shadow: none;
+}
+
+.read-more-btn-wrapper:hover {
+    background: darkgoldenrod;
+}
+  
+.read-more-btn {
+    color: #234465;
+    font-weight: 700;
+}
+
+.background-poly {
+    padding: 0px 30px 0px 15px;
+    height: 100%;
+    width: 8%;
+    background: darkgoldenrod;
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+}
+
+/* BLOG BUTTON */
+
+.blog-btn-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.blog-btn-wrapper > .blog-btn {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.section-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.visit-blog-btn {
+    padding: 20px 5px;
+}
+
+@media (max-width: 1024px) {
+    .blog-section-wrapper {
+        justify-content: center;
+    }
+
+    .blog-section-article:not(:first-child) {
+        display: none;
+    }
+
+    .blog-section-article:first-child {
+        min-width: 400px;
+    }
+}

@@ -1,0 +1,44 @@
+.blog-nav {
+    position: absolute;
+    width: 100%;
+    letter-spacing: 0.05rem;
+}
+
+.blog-nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-nav ul li {
+    display: block;
+    list-style: none outside;
+}
+
+.blog-wrapper > .blog-nav > ul li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.blog-nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.blog-nav ul li a:hover {
+    border-bottom: 3px solid white;
+}
+
+.nav-link-selected {
+    border-bottom: 3px solid white;
+}

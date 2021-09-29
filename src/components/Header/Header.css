@@ -1,0 +1,147 @@
+/* HEADER COMMON */
+
+.header-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: center;  
+    letter-spacing: 0.05rem;
+    background: #234465;
+    padding: 0.8rem 1rem;
+    border-bottom: 2px solid darkgoldenrod;
+}
+  
+/* NAV ITEMS COMMON */
+
+.navbar ul li {
+    display: block;
+    list-style: none outside;
+    position: relative;
+}
+  
+.navbar a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+  }
+
+.header-navbar-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    height: 70px;
+}
+
+/* LEFT BAR */
+
+.left-bar {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 1em;
+}
+
+.logo a:active {
+    text-decoration: none;
+}
+
+.logo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    border: none;
+    position: absolute;
+}
+
+.left-bar a:hover i {
+    margin-bottom: 5px;
+    transform: scale(1.25);
+}
+
+.logo-paw {
+    font-size: 40px;
+    color: darkgoldenrod;
+    transform: rotate(-3deg);
+    transition: 0.5s;
+}
+
+.logo h3 {
+    color: white;
+    margin: 0px;
+    margin-top: -5px;
+    font-size: 20px;
+}
+
+/* NAV TITLE */
+
+.nav-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-navbar-dashboard > .nav-title h1 {
+    font-size: 3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: darkgoldenrod;
+    border: none;
+    margin: 0px;
+}
+
+/* RIGHT BAR */
+
+.right-bar {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    justify-content: center;    
+}
+
+.right-bar ul {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.right-bar ul li {
+    margin-right: 0.5rem;
+}
+
+.right-bar a {
+    border: 2px solid darkgoldenrod;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    font-size: 19px;
+}
+
+.right-bar ul li a:hover,
+.right-bar ul li:hover > a,
+.button:hover {
+    background: darkgoldenrod;
+    color: #234465;
+    font-weight: bold;
+}
+
+#user-icon {
+    font-size: 25px;
+}
+
+@media (max-width: 1300px) {
+    .nav-title {
+        display: none;
+    }
+
+    .header-navbar-dashboard {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #greeting-text {
+        display: none;
+    }
+}

@@ -1,0 +1,79 @@
+/* SEARCH FIELD */
+
+.findVet-search-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.findVet-search {
+    position: relative;
+    margin: 50px;
+    width: 30rem;
+    background: white;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 5px;
+}
+
+.findVet-search input,
+.findVet-search button {
+    height: 50px;
+    border: 0;
+    font-size: 1.8rem;
+}
+
+.findVet-search input {
+    outline: 0;
+    width: 100%;
+    background: white;
+    padding: 0 1.6rem;
+    border-radius: 5px;
+    appearance: none; 
+    transition: all 2s;
+    transition-property: width, border-radius;
+    z-index: 1;
+}
+
+#findVet-search-btn {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%;
+    background: darkgoldenrod;
+    border-radius: 0 0 0 0;
+}
+
+.findVet-search label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+
+.findVet-search input:focus + #findVet-search-btn {
+    animation: fade 1s;
+    display: block;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* VET CARD */
+
+.vetCards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    column-gap: 10px;
+    row-gap: 50px;
+}

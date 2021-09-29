@@ -1,0 +1,85 @@
+/* MEDICAL RECORD */
+
+.medical-record-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.myPetsInfo {
+    display: flex;
+    flex-flow: column;
+    max-width: 500px;
+    min-width: 300px;
+    color: white;
+    background: #234465;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.section-text {
+    margin-bottom: 10px;
+}
+
+.section-text p {
+    margin: 0px;
+    font-size: 27px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    cursor: default;
+}
+
+.heart-icon {
+    color: red;
+}
+
+.medical-btn {
+    padding: 10px;
+}
+
+.visit-record-btn {
+    font-size: 30px;
+}
+
+/* CARD WRAPPER */
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    cursor: default;
+}
+
+.card-wrapper h2 {
+    display: flex;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin: 0px;
+}
+
+.card-wrapper > .flip-card > .flip-card-inner > .flip-card-front,
+.card-wrapper > .flip-card > .flip-card-inner > .flip-card-back {
+    box-shadow: none;
+}
+
+@media (max-width: 1024px) {
+    .card-wrapper {
+        display: none;
+    }
+    
+    .medical-record-section {
+        justify-content: center;
+    }
+}

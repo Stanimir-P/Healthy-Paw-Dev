@@ -1,38 +1,47 @@
+body {
+    color: #eff4f4;
+}
+
 .App {
-  text-align: center;
+    cursor: default;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* BACKGROUND COVER */
+
+.background-cover {
+    position: relative;
+    background-image: linear-gradient( #2344656b, #23446569 ), 
+    url(./images/kitty-bg.jpg);
+    max-width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* HELPERS */
+
+.bold {
+    font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* SECTION BUTTON */
+
+.section-btn {
+    display: flex;
+    justify-content: center;
+    background: darkgoldenrod;
+    border-radius: 5px;
+    transition: 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+.section-btn a {
+    color: white;
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-btn:hover {
+    background: #745507;
+    cursor: pointer;
 }

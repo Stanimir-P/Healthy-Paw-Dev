@@ -1,0 +1,121 @@
+.create-pet-record {
+    display: flex;
+    justify-content: center;
+}
+
+/* FORM STYLES */
+
+.create-pet-record form {
+	min-width: 30rem;
+    margin: 50px 0px;
+    
+}
+
+.create-pet-record form fieldset {
+	border: 1px solid #696969;
+	background: #ececec;
+	border-radius: 10px;
+    padding: 40px 60px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+}
+
+.create-pet-field {
+	display: flex;
+	flex-direction: column;
+	margin: 30px 0px;
+}
+
+.create-pet-record h3 {
+    display: flex;
+    justify-content: center;
+	font-size: 30px;
+    color: black;
+	margin: 0px;
+	margin-bottom: 60px;
+}
+
+.create-pet-record form fieldset p label {
+    color: black;
+	font-weight: 700;
+}
+
+.create-pet-record .create-pet-field .input {
+	display: flex;
+	position: relative;
+	align-items: center;
+}
+
+.create-pet-record .create-pet-field .input input {
+	border: none;
+	flex: 1 1 auto;
+	padding: 0.8rem;
+	outline: none;
+	background: transparent;
+	z-index: 2;
+	order: 2;
+}
+
+.create-pet-record .create-pet-field .input input+.actions {
+	display: block;
+	background: #FFF;
+	border: 1px solid black;
+	border-radius: 0.3rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.create-pet-record .create-pet-field .input input:focus+.actions {
+	border-color: darkgoldenrod;
+}
+
+.create-pet-record form textarea {
+	border-radius: 0.5rem;
+	padding: 0.8rem;
+}
+
+.create-pet-record form textarea:focus {
+	outline: none;
+	border-color: darkgoldenrod;
+}
+
+/* FIELDS STYLES */
+
+.field-petName {
+	flex-direction: column;
+}
+
+.field-attachImage {
+	color: black;
+}
+
+#attach-image {
+	width: 240px;
+}
+
+.create-pet-field label {
+	margin-bottom: 5px;
+}
+
+.field-breed select {
+	width: 60%;
+}
+
+.create-record-button {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+} 
+
+.create-record-button button {
+	margin: 0px;
+	align-self: center;
+}
+
+.error-message {
+    top: 0px;   
+}

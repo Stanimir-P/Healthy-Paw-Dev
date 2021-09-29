@@ -1,0 +1,83 @@
+/* VET CARD */
+
+.vet-card-wrapper {
+    width: 450px;
+    border-radius: 5px;
+    margin: 50px;
+    box-shadow: 0 0 5em -1em black;
+}
+
+/* CARD IMAGE */
+
+.clinic-image {
+    display: flex;
+}
+
+.clinic-image img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* CARD DESCRIPTION */
+
+.clinic-description {
+    border: 1px solid rgb(156, 156, 156);
+    border-top: 0px;
+    background: white;
+}
+
+.clinic-name-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.clinic-name-wrapper h1 {
+    color: black;
+    margin: 0px;
+}
+
+.clinic-info-wrapper {
+    font-size: 20px;
+    color: rgb(58, 58, 58);
+    margin: 10px 0px;
+    padding: 20px;
+}
+
+.card-actions {
+    display: flex;
+    padding: 5px 20px;
+    border-top: 1px solid rgb(156, 156, 156);
+    justify-content: space-between;
+}
+
+.visit-page-btn {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.visit-page-btn a {
+    text-decoration: none;
+    color: darkgoldenrod;
+    transition: 0.5s;
+}
+
+.visit-page-btn a:hover {
+    color: black;
+}
+
+.clinic-social a {
+    font-size: 30px;
+    margin: 0px 10px;
+    color: darkgoldenrod;
+}
+
+.clinic-social a > .fab {
+    transition: 0.5s;
+}
+
+.clinic-social a > .fab:hover {
+    transform: scale(1.25);
+}
