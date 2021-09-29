@@ -30,17 +30,17 @@ export const database = firebase.database();
 
 export const register = (email, password, history) => {
     auth.createUserWithEmailAndPassword(email, password)
-        .then(() => history.push('/'))
+        .then(() => history.push('/Healthy-Paw/'))
         .catch(err => showErrorMessage('Invalid email address!'));
 }
 
 export const login = (email, password, history) => {
     auth.signInWithEmailAndPassword(email, password)
-        .then(() => history?.push('/'))
+        .then(() => history?.push('/Healthy-Paw/'))
         .catch(err => showErrorMessage('Wrong email or password!'));
 }
 
 export const logout = () => {
     auth.signOut();
-    return <Redirect to="/" />
+    return <Redirect to="/Healthy-Paw/" />
 }

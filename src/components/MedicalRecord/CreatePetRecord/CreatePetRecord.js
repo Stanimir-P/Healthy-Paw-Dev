@@ -43,7 +43,7 @@ const CreatePetRecord = ({
         
         createDbRecord(userId, petName.value, petGender.value, birthDate.value, category.value, breed.value, weight.value);
 
-        history.push('/medical-record');
+        history.push('/Healthy-Paw/medical-record');
     }
 
     return (
