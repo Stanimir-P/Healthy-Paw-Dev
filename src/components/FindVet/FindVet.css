@@ -69,11 +69,13 @@
     to {opacity: 1;}
 }
 
-/* VET CARD */
+/* VET CARD CONTAINER */
 
 .vetCards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     column-gap: 10px;
     row-gap: 50px;
+    padding: 50px;
+    justify-items: center;
 }
