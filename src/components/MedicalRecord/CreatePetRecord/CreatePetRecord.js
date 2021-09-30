@@ -115,7 +115,7 @@ const CreatePetRecord = ({
                     </p>
 
                     <div className="error-wrapper">
-                        <div className="error-message">ASD</div>
+                        <div className="error-message">error</div>
                     </div>
 
                     <div className="create-record-button">

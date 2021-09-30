@@ -13,7 +13,7 @@ const Header = () => {
             <nav className="header-navbar navbar">
                 <section className="header-navbar-dashboard">
                     <div className="left-bar logo">
-                        <Link to="/Healthy-Paw/" ><i className="fa fa-paw logo-paw"></i> <h3>Healthy</h3></Link>
+                        <Link to="/" ><i className="fa fa-paw logo-paw"></i> <h3>Healthy</h3></Link>
                     </div>
 
                     <div className="nav-title">
@@ -26,13 +26,13 @@ const Header = () => {
                                 <ul>
                                     <li id="greeting-text">Welcome, {email}!</li>
                                     <li id="user-icon"><i className="fas fa-user"></i></li>
-                                    <li><Link to="/Healthy-Paw/logout"><i className="fas fa-sign-out-alt"></i> Logout</Link></li>
+                                    <li><Link to="/logout"><i className="fas fa-sign-out-alt"></i> Logout</Link></li>
                                 </ul>
                             </div>
                             : <div className="guest-user">
                                 <ul>
-                                    <li><Link to="/Healthy-Paw/register"><i className="fas fa-user-plus"></i> Register</Link></li>
-                                    <li><Link to="/Healthy-Paw/login"><i className="fas fa-sign-in-alt"></i> Login</Link></li>
+                                    <li><Link to="/register"><i className="fas fa-user-plus"></i> Register</Link></li>
+                                    <li><Link to="/login"><i className="fas fa-sign-in-alt"></i> Login</Link></li>
                                 </ul>
                             </div>
                         }
