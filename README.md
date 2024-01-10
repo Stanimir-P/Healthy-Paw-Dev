@@ -18,7 +18,7 @@ Healthy Paw is a web app, which offers an easy and a fun way to find a vet, crea
 ![Main Page 5](./public/Main%20page%205.png)
 
 ![Clinics](./public/Clinics.png)
-![Medical record](./public/Record.png)
+![Medical record](./public/Medical%20record.png)
 ![Create Record](./public/Create%20record.png)
 ![Gallery](./public/Gallery.png)
 ![Blog](./public/Blog.png)
